@@ -19,7 +19,7 @@ class JepretCtrl {
     Jepret.create({
       title: req.body.title,
       caption: req.body.caption,
-      imgUrl: req.body.imgUrl
+      imgUrl: req.file.cloudStoragePublicUrl
     })
     .then(data => res.send(data))
     .catch(err => res.send(err))
