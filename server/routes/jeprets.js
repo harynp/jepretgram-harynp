@@ -7,6 +7,7 @@ var img = require('../helpers/image')
 router.get('/', jepretCtrl.findAll);
 router.get('/:id', jwt.isLogin, jepretCtrl.findById)
 router.post('/', jwt.isLogin, img.multer.single('imgUrl'), img.sendUploadToGCS, jepretCtrl.create);
+// router.post('/', jepretCtrl.create);
 router.delete('/:id', jwt.isLogin, jwt.authUser, jepretCtrl.delete);
 router.put('/:id', jwt.isLogin, jwt.authUser, jepretCtrl.edit)
 
