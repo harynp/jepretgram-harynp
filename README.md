@@ -1,6 +1,3 @@
-# jepretgram-harynp
-Aplikasi Last Phase 2 Livecoding Jepretgram
-
 # Jepretgram - Hary NP
 
 Demo app with basic REST API
