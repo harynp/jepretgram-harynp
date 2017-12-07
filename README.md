@@ -14,19 +14,19 @@ List of user routes :
 
 | Route | HTTP | Description |
 | ------ | ------ | ------ |
-| `${/api/users}` | GET | Get all the users
-| `${/api/users/:id}` | GET | Get single user
-| `${/api/users}` | POST | Create a user
-| `${/api/users/:id}` | DELETE | Delete a users
-| `${/api/users/:id}` | PUT | Update a user with new info
-| `${/api/users/:id}` | PATCH | Update a user with specific new info
-
-List of filter routes :
+| `${/users}` | GET | Get all the users
+| `${/users/:id}` | GET | Get single user
+| `${/users/login}` | POST | Login
+| `${/users/register}` | POST | Register
+| `${/users/delete}` | DELETE | Delete Users
 
 | Route | HTTP | Description |
 | ------ | ------ | ------ |
-|  `${/api/users?name={"name"}` | GET | Get `${name}` match in users
-| `${/api/users?name="{na}"}` | GET | Get `${na}` like in users
+| `${/jeprets}` | GET | Get all the jeprets
+| `${/jeprets/:id}` | GET | Get single jeprets
+| `${/jeprets/}` | POST | Post jeprets
+| `${/jeprets/:id}` | DELETE | Delete jeprets
+| `${/jeprets/:id}` | PUT | Edit jeprets
 
 # Usage
 With only npm :
